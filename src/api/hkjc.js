@@ -11,7 +11,6 @@ async function hkjcProcessData() {
             const response = await axios.get(hkjcURL);
             hkjcMatches = response.data.matches; // in the data: name, tournaments, matches
         }
-        // console.log(hkjcMatches);
         
       } catch (error) {
         console.error('API request error:', error);
