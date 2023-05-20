@@ -14,7 +14,6 @@ async function hkjcProcessData() {
         
       } catch (error) {
         console.error('API request error:', error);
-        res.status(500).json({ error: 'Internal Server Error' });
       }
     return hkjcMatches;
   }
